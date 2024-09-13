@@ -1,0 +1,1 @@
+document.title = 'Script.js is working';
