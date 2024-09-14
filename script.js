@@ -10,3 +10,8 @@ link.type = 'text/css';
 
 link.href = 'https://cdn.jsdelivr.net/gh/SunbirG/WfTakeHome@main/style.css';
 document.head.appendChild(link);
+
+// create new div in body to act as the glass wall.
+const elGlasswall = document.createElement('div');
+elGlasswall.setAttribute('id', 'wf-glasswall');
+document.body.appendChild(elGlasswall);
