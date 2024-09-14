@@ -1,7 +1,12 @@
-const link = document.createElement('link');
+// Linking the CSS file directley from my github repo.
+// This works when I retrieve the RAW url from the file on the repo.  
+// However The RAW file on gihub serves the link type as text/plain.
+// To fix this we can use jsDelivr to detect and sever the correct file type as text/css.
+// Referance https://www.jsdelivr.com/github , https://rawgit.com/ , https://stackoverflow.com/questions/7780550/referencing-a-css-file-in-github-repo-as-stylesheet-in-a-html-file .
 
+const link = document.createElement('link');
 link.rel = 'stylesheet';
 link.type = 'text/css';
-link.href = 'https://github.com/SunbirG/WfTakeHome/blob/5bffa842d8537de01591879e4cf317e0c0608cdd/style.css';
 
+link.href = 'https://cdn.jsdelivr.net/gh/SunbirG/WfTakeHome@main/style.css';
 document.head.appendChild(link);
