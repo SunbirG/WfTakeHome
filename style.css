@@ -1,6 +1,6 @@
 
 .blog-splash .blog-splash__container .blog-splash__content .blog-splash__title {
-    color: aqua;
-    font-size: 500px;
+    color: aqua !important;
+    font-size: 500px important;
 
 }
