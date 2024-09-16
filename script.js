@@ -167,7 +167,10 @@ wfStyle.innerHTML = `
         width: 60vw;
     }
 }
-/* .wf-hubspot-form__progress-bar::before {
+/* 
+// tried to get progress bar to work but couldnt in the time given
+
+.wf-hubspot-form__progress-bar::before {
     content:"";
     position: absolute;
     top: 45%;
