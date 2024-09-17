@@ -1,0 +1,124 @@
+#wf-drawer__container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.wf-drawer__content {
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+}
+.wf-drawer-open .wf-drawer__content {
+    max-height: 500px;
+    padding: 10px;
+}
+.wf-drawer__button-container {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.wf-drawer__button {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; /* Ensure center alignment */
+    color: #231b0d;
+    background-color: #d6a852;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 20px;
+}
+.wf-drawer__button p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+.wf-drawer__button svg {
+    width: 20px;
+    height: 20px;
+    fill: #231b0d;
+    transition: transform 0.3s ease-in-out;
+}
+.wf-drawer__button div {
+    display: flex;
+    align-items: center;
+}
+.wf-rotate-chevron {
+    transform: rotate(180deg);
+}
+.swiper-slide {
+    height: 289px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+.swiper-slide h3 {
+    font-size: 20px !important;
+    color: #fff !important;
+}
+.swiper-slide {
+    perspective: 1000px; /* Enable 3D */
+    position: relative;
+}
+.wf-flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+.wf-flip-card-front, .wf-flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side when not flipped */
+}
+.wf-flip-card-front {
+    z-index: 2;
+    transform: rotateY(0deg); /* Default state */
+}
+
+.wf-flip-card-back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transform: rotateY(180deg); /* Hidden by default */
+    background-color: #333;
+    color: white;
+    z-index: 1;
+
+}
+.wf-flip-card.flipped .wf-flip-card-inner {
+    transform: rotateY(180deg);
+}
+.wf-info-btn, .wf-back-btn {
+    background: #fff;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.wf-back-btn {
+    margin: 60px;
+    width: 90px;
+}
+
+.wf-info-btn:hover, .wf-back-btn:hover {
+    background: #f2f2f2;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
